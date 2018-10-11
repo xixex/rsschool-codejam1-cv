@@ -17,12 +17,12 @@ h1,h2,h3,h4,h5{
 .about-me{
     max-width: 512px;
     margin-bottom: 45px;
+    min-height: calc(100vh - 115px);
 }
 .opac-image{
     position:absolute;
     top:-200px; 
     left: -250px;
-    /* display: inline-block; */
 }
 
 .opac-image img{
@@ -61,7 +61,6 @@ img {
     justify-content: left;
     overflow:hidden; 
 	position:relative;
-
 }
 .profile{
     background-color: deeppink;
@@ -74,6 +73,7 @@ img {
     background-color: deeppink;
     display: flex;
     align-items: center;
+    height: 70px;
 }
 .photo-wrapper{
     z-index: 2;
