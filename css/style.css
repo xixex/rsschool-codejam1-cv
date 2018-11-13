@@ -1,0 +1,89 @@
+body{
+    overflow-x:hidden;
+    font-family: "DIN","Nimbus Sans L", Helvetica, sans-serif;
+    font-size: 12px;
+    color: white;
+    margin: 0;
+    display: flex;
+    justify-content: center;  
+}
+
+h1,h2,h3,h4,h5{
+    text-transform: uppercase;
+}
+.photo-wrapper{
+    max-width: 512px ;
+}
+.about-me{
+    max-width: 512px;
+    margin-bottom: 45px;
+    min-height: calc(100vh - 95px);
+}
+.opac-image{
+    position:absolute;
+    top:-200px; 
+    left: -250px;
+}
+
+.opac-image img{
+    height: 1000px;
+    width: 1000px;
+    opacity: 0.1;
+    z-index: 1;
+}
+.about-me{
+    z-index: 2;
+}
+
+h1{
+    font-size: 5em;    
+}
+p{
+    font-family: "Lucida Console", Monaco, monospace;
+    font-size: 1em;
+}
+.wrapper{
+    min-height:100vh;
+    width: 1024px;
+}
+
+img {
+    height: auto;
+    pointer-events: none;
+}
+.profile,
+.contacts{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.profile{
+    justify-content: left;
+    overflow:hidden; 
+	position:relative;
+}
+.profile{
+    background-color: grey;
+}
+.logo{
+    margin: 5px;
+}
+
+.contacts{
+    background-color: grey;
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+.photo-wrapper{
+    z-index: 2;
+}
+.photo-wrapper img{
+    max-width: 100%;
+    padding: 3em;
+}
+
+@font-face {
+    font-family: DIN;
+    src: url("../fonts/DIN.otf") format("opentype");
+}
